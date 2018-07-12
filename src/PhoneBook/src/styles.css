@@ -1,0 +1,51 @@
+
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
+h1{font-size: 36px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
+
+table{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+
+th {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 4px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+}
+
+.searchBox {
+    padding-bottom: 16px;
+}
+
+span.sort 
+{
+    float: right;
+    vert-align: middle;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+i.sort {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.asc {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.desc {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.active {
+    display: inherit;
+}
+.inactive {
+    display: none!important;
+}

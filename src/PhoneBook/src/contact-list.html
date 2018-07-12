@@ -1,0 +1,22 @@
+<template>    
+<div class="searchBox">
+    <form submit.trigger="clearFilter()">
+        <input type="text" value.bind="searchString">
+        <button type="submit">clear</button>
+    </form>
+</div>
+<div>
+    <table>
+        <tr>
+            <th click.delegate="sort(0)"><span>Name</span><span class="sort"><i class="sort ${nameSortingClass}"></i></span></th>
+            <th click.delegate="sort(1)"><span>Phone</span><span class="sort"><i class="sort ${phoneSortingClass}"></i></span></th>
+            <th click.delegate="sort(2)"><span>Address</span><span class="sort"><i class="sort ${addressSortingClass}"></i></span></th>
+        </tr>
+        <tr repeat.for="contact of items">
+            <td>${contact.name}</td>
+            <td>${contact.phone_number}</td>
+            <td>${contact.address}</td>
+        </tr>    
+    </table>
+</div>
+<template>
